@@ -2,12 +2,9 @@ function init() {
     var myMap = new ymaps.Map('map', {
         center: [59.941828, 30.367097],
 		
-        zoom: 13,
-        controls: ['SearchControl']
-    }, {
-    // Будет производиться поиск по топонимам и организациям.
-    searchControlProvider: 'yandex#search'
-	});
+        zoom: 10,
+        controls: []
+    });
     
     // Создадим экземпляр элемента управления «поиск по карте»
     // с установленной опцией провайдера данных для поиска по организациям.
@@ -21,7 +18,7 @@ function init() {
     
     // Программно выполним поиск определённых кафе в текущей
     // прямоугольной области карты.
-    searchControl.search('Петроградка');
+    //searchControl.search('Петроградка');
 }
 
 ymaps.ready(init);
