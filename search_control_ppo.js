@@ -3,7 +3,7 @@ function init() {
         center: [59.941828, 30.367097],
 		
         zoom: 13,
-        controls: []
+        controls: ['SearchControl']
     }, {
     // Будет производиться поиск по топонимам и организациям.
     searchControlProvider: 'yandex#search'
@@ -21,7 +21,7 @@ function init() {
     
     // Программно выполним поиск определённых кафе в текущей
     // прямоугольной области карты.
-    searchControl.search('Шоколадница');
+    searchControl.search('Петроградка');
 }
 
 ymaps.ready(init);
