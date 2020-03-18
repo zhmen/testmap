@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Page Title</title>
-</head>
-
-
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A784b4b79db888f91cd3cd9c7cf0d2efb86ba691582d635f5274e7d8b9fcb48a3&amp;width=1280&amp;height=720&amp;lang=ru_RU&amp;scroll=true;apikey=f51c69d4-2785-4aea-be0b-089af8ad2ba1"></script>
-    <script src="event_reverse_geocode.js" type="text/javascript"></script>
-    
-	<style type="text/css">
-        html, body {
-            width: 100%;
-            height: 95%;
-            margin: 0;
-            padding: 0;
-            font-family: Arial;
-            font-size: 14px;
-        }
-        #map {
-            width: 100%;
-            height: 95%;
-        }
-        .header {
-            padding: 5px;
+    <title>Поиск организаций и геопоиск</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--
+        Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
+        Получить ключ можно в Кабинете разработчика: https://developer.tech.yandex.ru/keys/
+    -->
+    <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A784b4b79db888f91cd3cd9c7cf0d2efb86ba691582d635f5274e7d8b9fcb48a3&amp;width=1280&amp;height=720&amp;lang=ru_RU&amp;scroll=true;apikey=f51c69d4-2785-4aea-be0b-089af8ad2ba1" type="text/javascript"></script>
+    <script src="search_control_ppo.js" type="text/javascript"></script>
+	<style>
+        html, body, #map {
+            width: 100%; height: 100%; padding: 0; margin: 0;
         }
     </style>
 </head>
 <body>
-<h1>Hello World! new!</h1>
-<p class="header">Кликните по карте, чтобы узнать адрес</p>
+<h1>Hello World! new search!</h1>
 <div id="map"></div>
 </body>
 </html>
+
+
+
